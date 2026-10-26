@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Medições — Raízes do Clima</title>
+<meta name="description" content="Medições de temperatura feitas com Arduino em uma área arborizada e em uma praça sem árvores em Jequié.">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+<header class="topo">
+  <div class="container topo-in">
+    <a class="logo" href="index.html" aria-label="Raízes do Clima — página inicial">
+      <img src="Logozinha.png" alt="" class="logo-img" width="48" height="48">
+      <span class="logo-nome">Raízes do Clima</span>
+    </a>
+    <button class="menu-btn" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav aria-label="Principal"><ul><li><a href="index.html">Início</a></li><li><a href="sul.html">Jequié × Sul</a></li><li><a href="comparacao.html" aria-current="page">Medições</a></li><li><a href="problema.html">Problemas</a></li><li><a href="solucao.html">Soluções</a></li></ul></nav>
+  </div>
+</header>
+<main id="conteudo">
+<section class="banner-interno"><div class="container"><h1>📊 Medições de Temperatura e Umidade</h1><p>O que os nossos sensores mostraram em Jequié</p></div></section>
+<div class="conteudo-pagina">
+  <h2>Sobre os dados coletados</h2>
+  <p>Realizamos medições de temperatura e umidade do ar em diferentes regiões de Jequié, comparando locais com árvores e áreas sem vegetação. Os resultados mostram a diferença de clima entre esses ambientes.</p>
+  <p>Os dados foram registrados em horários parecidos, garantindo uma comparação justa entre os pontos estudados.</p>
+
+  <h2>🌡️ Lado a lado</h2>
+  <div class="comparador">
+    <div class="leitura fresco revelar"><div class="temp">33,7 °C</div><h3>Área arborizada</h3><small>Ceep Regis Pacheco</small></div>
+    <div class="vs"><b>5,4 °C</b>de diferença</div>
+    <div class="leitura quente revelar"><div class="temp">39,1 °C</div><h3>Área sem cobertura vegetal</h3><small>Praça Ruy Barbosa</small></div>
+  </div>
+  <p class="nota">Leituras exibidas no display do nosso termômetro com Arduino (fotos em “Registros de Campo”).</p>
+
+  <h2>📈 Gráficos dos Resultados</h2>
+  <figure class="caixa-medicao revelar"><img src="p3.p3.png" alt="Gráfico de temperatura do monitor serial do Arduino" loading="lazy"><figcaption>Variação da temperatura</figcaption></figure><figure class="caixa-medicao revelar"><img src="p3.p4.jpg" alt="Notebook ligado ao Arduino exibindo as leituras de temperatura" loading="lazy"><figcaption>Monitoramento Térmico</figcaption></figure>
+  <h2>📸 Registros de Campo</h2>
+  <div class="galeria dois">
+    <figure class="revelar"><img src="p3.p2.jpg" alt="Display do Arduino marcando 33,7 °C" loading="lazy"><figcaption>Área arborizada (Ceep Regis Pacheco) — 33,7 °C</figcaption></figure>
+    <figure class="revelar"><img src="p3.p1.jpg" alt="Display do Arduino marcando 39,1 °C" loading="lazy"><figcaption>Área sem cobertura vegetal (Praça Ruy Barbosa) — 39,1 °C</figcaption></figure>
+  </div>
+  <p class="nota">Toque em qualquer imagem para ampliar.</p>
+  <div class="cta revelar"><h2>E o que isso significa?</h2><p>Veja os problemas causados pela falta de árvores e o que podemos fazer.</p><a class="botao primario" href="problema.html">Ver os problemas</a></div>
+</div>
+
+</main>
+<footer>
+  <p><strong>Raízes do Clima</strong></p>
+  <p>Projeto do 3º C — Curso Técnico em Informática · Jequié, Bahia</p>
+  <p>&copy; 2026 Raízes do Clima</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
